@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|c:\\users\\vitin\\onedrive\\\u00E1rea de trabalho\\projetos\\c#\\crudaed\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|c:\\users\\vitin\\onedrive\\\u00E1rea de trabalho\\projetos\\c#\\crudaed\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|c:\\users\\vitin\\onedrive\\\u00E1rea de trabalho\\projetos\\c#\\crudaed\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|c:\\users\\vitin\\onedrive\\\u00E1rea de trabalho\\projetos\\c#\\crudaed\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|c:\\users\\vitin\\onedrive\\\u00E1rea de trabalho\\projetos\\c#\\crudaed\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|c:\\users\\vitin\\onedrive\\\u00E1rea de trabalho\\projetos\\c#\\crudaed\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|c:\\users\\vitin\\onedrive\\\u00E1rea de trabalho\\projetos\\c#\\crudaed\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B0BE497-DF69-471B-8742-F3E29BD4205D}|CrudAED.csproj|solutionrelative:form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form3.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form3.cs [Projeto]",
+              "RelativeToolTip": "Form3.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T17:58:34.127Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form2.cs [Projeto]",
+              "RelativeToolTip": "Form2.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T17:58:20.687Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T18:04:37.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form1.cs [Projeto]",
+              "RelativeToolTip": "Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T17:37:09.835Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form3.cs",
+              "RelativeToolTip": "Form3.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwBcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T19:02:34.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T18:09:28.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form4.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form4.cs",
+              "RelativeDocumentMoniker": "Form4.cs",
+              "ToolTip": "C:\\Users\\vitin\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\c#\\CrudAED\\Form4.cs [Projeto]",
+              "RelativeToolTip": "Form4.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T18:01:39.191Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
