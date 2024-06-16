@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrudAED")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ce606d70c950695a62fe9fa746bc8b77ef840b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2280ab13d6dda5d7ce985dd0d825ec15544c93b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrudAED")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudAED")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

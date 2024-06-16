@@ -230,7 +230,7 @@ namespace CrudAED
                 return false;
             }
         }
-
+        //método utilizado para deletar lista do banco de dados
         public bool deletarLista(ListaDupla x)
         {
             try

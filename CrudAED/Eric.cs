@@ -5,10 +5,11 @@ using System.Runtime.CompilerServices;
 
 namespace leitura
 {
-    public class Pessoa
+    public class Pessoa // classe pessoa
     {
         public int index;
         public string userId, firstName, lastName, sex, email, phone, dateOfBirth, jobTitle;
+        //construtor vazio passa todos os parâmetros como -1
         public Pessoa() : this(-1, "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1") { }
         public Pessoa(int ind, string id, string firstn, string lastn, string sexo, string mail, string telefone, string niver, string job)
         {
@@ -22,12 +23,12 @@ namespace leitura
             dateOfBirth = niver;
             jobTitle = job;
         }
-        public override string ToString()
+        public override string ToString() // método que escreve todas variáveis em uma única string
         {
             return ($"[## {index} ## {userId} ## {firstName} ## {lastName} ## {sex} ## {email} ## {phone} ##{dateOfBirth} ## {jobTitle} ##]");
         }
     }
-    public class CelulaDupla
+    public class CelulaDupla 
     {
         public Pessoa elemento;
         public CelulaDupla prox, ant;
@@ -40,11 +41,11 @@ namespace leitura
     }
     public class ListaDupla
     {
-        public CelulaDupla primeiro, ultimo;
+        public CelulaDupla primeiro, ultimo,passo; // passo utilizado para não cadastrar a lista mais de uma vez no banco de dados
         public ListaDupla()
         {
             primeiro = new CelulaDupla();
-            ultimo = primeiro;
+            passo= ultimo = primeiro;
         }
         public void InserirInicio(Pessoa x)
         {
@@ -168,7 +169,7 @@ namespace leitura
                 Console.WriteLine(i.elemento.firstName + " " + i.elemento.lastName);
             }
         }
-        public void Importar(string caminho)
+        public void Importar(string caminho) //método utilizado para importar os dados de um arquivo
         {
             using (Stream entra = File.Open(caminho, FileMode.Open))
             using (StreamReader leitor = new StreamReader(entra))
@@ -187,7 +188,8 @@ namespace leitura
                 }
             }
         }
-        private CelulaDupla Partition(CelulaDupla low, CelulaDupla high)
+            // método utilizado para comparar as partições realizadas pelo quicksort (usando nome como parâmetro)
+        private CelulaDupla PartitionName(CelulaDupla low, CelulaDupla high)
         {
             string pivot = high.elemento.firstName + high.elemento.lastName;
             CelulaDupla i = low.ant;
@@ -210,17 +212,56 @@ namespace leitura
 
             return i;
         }
-        public void QuickSort()
+        //Método quick sort usando nome como parâmetro
+        public void QuickSortName()
         {
-            QuickSort(primeiro.prox, ultimo);
+            QuickSortName(primeiro.prox, ultimo);
         }
-        private void QuickSort(CelulaDupla low, CelulaDupla high)
+        private void QuickSortName(CelulaDupla low, CelulaDupla high)
         {
             if (high != null && low != high && low != high.prox)
             {
-                CelulaDupla pi = Partition(low, high);
-                QuickSort(low, pi.ant);
-                QuickSort(pi.prox, high);
+                CelulaDupla pi = PartitionName(low, high);
+                QuickSortName(low, pi.ant);
+                QuickSortName(pi.prox, high);
+            }
+        }
+        // método utilizado para comparar as partições realizadas pelo quicksort (usando trabalho como parâmetro)
+        private CelulaDupla PartitionJob(CelulaDupla low, CelulaDupla high)
+        {
+            string pivot = high.elemento.jobTitle;
+            CelulaDupla i = low.ant;
+
+            for (CelulaDupla j = low; j != high; j = j.prox)
+            {
+                if (string.Compare((j.elemento.jobTitle), pivot) <= 0)
+                {
+                    i = (i == null) ? low : i.prox;
+                    Pessoa temp = i.elemento;
+                    i.elemento = j.elemento;
+                    j.elemento = temp;
+                }
+            }
+
+            i = (i == null) ? low : i.prox;
+            Pessoa temp1 = i.elemento;
+            i.elemento = high.elemento;
+            high.elemento = temp1;
+
+            return i;
+        }
+        //método quicksort usando trabalho como parâmetro
+        public void QuickSortJob()
+        {
+            QuickSortJob(primeiro.prox, ultimo);
+        }
+        private void QuickSortJob(CelulaDupla low, CelulaDupla high)
+        {
+            if (high != null && low != high && low != high.prox)
+            {
+                CelulaDupla pi = PartitionJob(low, high);
+                QuickSortJob(low, pi.ant);
+                QuickSortJob(pi.prox, high);
             }
         }
         public void ApagaLista()
@@ -231,19 +272,4 @@ namespace leitura
             }
         }
     }
-        /*static void Main(string[] args)
-         {
-             //Leitura do arquivo
-             ListaDupla pessoas= new ListaDupla();
-             pessoas.Importar("people-100.csv");
-              Console.WriteLine("Antes da ordenação:");
-         pessoas.Mostrar();
-
-         // Ordenação com QuickSort
-         pessoas.QuickSort();
-         Console.WriteLine("\nApós a ordenação:");
-         pessoas.MostrarNome();
-             Console.ReadKey();
-         }
-     }*/
     }

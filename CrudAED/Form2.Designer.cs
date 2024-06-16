@@ -34,6 +34,7 @@
             btnDeletarLista = new Button();
             btnVoltar1 = new Button();
             btnOrdenar = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // btnBuscar
@@ -55,7 +56,7 @@
             // 
             // btnEnviarLista
             // 
-            btnEnviarLista.Location = new Point(69, 229);
+            btnEnviarLista.Location = new Point(19, 229);
             btnEnviarLista.Name = "btnEnviarLista";
             btnEnviarLista.Size = new Size(172, 50);
             btnEnviarLista.TabIndex = 2;
@@ -65,7 +66,7 @@
             // 
             // btnDeletarLista
             // 
-            btnDeletarLista.Location = new Point(266, 229);
+            btnDeletarLista.Location = new Point(205, 229);
             btnDeletarLista.Name = "btnDeletarLista";
             btnDeletarLista.Size = new Size(172, 50);
             btnDeletarLista.TabIndex = 3;
@@ -85,18 +86,30 @@
             // 
             // btnOrdenar
             // 
-            btnOrdenar.Location = new Point(465, 229);
+            btnOrdenar.Location = new Point(393, 229);
             btnOrdenar.Name = "btnOrdenar";
             btnOrdenar.Size = new Size(172, 50);
             btnOrdenar.TabIndex = 6;
-            btnOrdenar.Text = "Ordenar Lista";
+            btnOrdenar.Text = "Ordenar por nome";
             btnOrdenar.UseVisualStyleBackColor = true;
+            btnOrdenar.Click += btnOrdenar_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(584, 229);
+            button1.Name = "button1";
+            button1.Size = new Size(172, 50);
+            button1.TabIndex = 7;
+            button1.Text = "Ordenar por Cargo";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(795, 494);
+            Controls.Add(button1);
             Controls.Add(btnOrdenar);
             Controls.Add(btnVoltar1);
             Controls.Add(btnDeletarLista);
@@ -122,5 +135,6 @@
         private Button button2;
         private Button btnVoltar1;
         private Button btnOrdenar;
+        private Button button1;
     }
 }

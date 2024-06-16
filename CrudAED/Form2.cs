@@ -46,12 +46,13 @@ namespace CrudAED
             form1.Show();
             this.Close();
         }
-
+        //Ao clicar o botão a lista recebe os dados e envia para o banco de dados
         public void btnEnviarLista_Click(object sender, EventArgs e)
         {
             try
             {
                 Variaveis.ListaPessoa.Importar(Variaveis.caminhoPasta);
+                Variaveis.caminhoPasta = "";
                 CadastroPessoa cadastrarLista = new CadastroPessoa();
 
                 if (cadastrarLista.cadastrarLista(Variaveis.ListaPessoa))
@@ -70,12 +71,41 @@ namespace CrudAED
         }
 
         
-
-        private void btnOrdenar_Click(object sender, EventArgs e, ListaDupla x)
+        //Ao clicar nesse botão a lista e o banco de dados são organizado a partir do Trabalho
+        private void button1_Click(object sender, EventArgs e)
         {
+            // Deletar lista do banco de dados
             try
             {
-                Variaveis.ListaPessoa.QuickSort();
+                Variaveis.ListaPessoa.passo = Variaveis.ListaPessoa.primeiro;
+                Variaveis.ListaPessoa.QuickSortJob();
+                MySqlConnection MysqlConexaoBanco = new MySqlConnection(ConexaoBanco.bancoServidor);
+                MysqlConexaoBanco.Open();
+
+                string query = $"select * from pessoas";
+
+
+                if (query != null)
+                {
+                    string truncateQuery = "TRUNCATE TABLE pessoas";
+                    MySqlCommand truncateCommand = new MySqlCommand(truncateQuery, MysqlConexaoBanco);
+                    truncateCommand.ExecuteNonQuery();
+                    CadastroPessoa cadastroPessoa = new CadastroPessoa();
+                }
+            }
+            catch (Exception ex) { }
+            try
+            {
+                CadastroPessoa cadastrarLista = new CadastroPessoa();
+
+                if (cadastrarLista.cadastrarLista(Variaveis.ListaPessoa))
+                {
+                    MessageBox.Show("Lista ordenada com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao ordenar lista.");
+                }
             }
             catch (Exception ex)
             {
@@ -83,7 +113,49 @@ namespace CrudAED
             }
 
         }
+        //ao clicar nesse botão a lista e o banco de dados são organizado a partir do nome e sobrenome
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            // Deletar lista do banco de dados
+            try
+            {
+                Variaveis.ListaPessoa.passo = Variaveis.ListaPessoa.primeiro;
+                Variaveis.ListaPessoa.QuickSortName();
+                MySqlConnection MysqlConexaoBanco = new MySqlConnection(ConexaoBanco.bancoServidor);
+                MysqlConexaoBanco.Open();
 
+                string query = $"select * from pessoas";
+
+
+                if (query != null)
+                {
+                    string truncateQuery = "TRUNCATE TABLE pessoas";
+                    MySqlCommand truncateCommand = new MySqlCommand(truncateQuery, MysqlConexaoBanco);
+                    truncateCommand.ExecuteNonQuery();
+                    CadastroPessoa cadastroPessoa = new CadastroPessoa();
+                }
+            }
+            catch (Exception ex) { }
+            try
+            {
+                CadastroPessoa cadastrarLista = new CadastroPessoa();
+
+                if (cadastrarLista.cadastrarLista(Variaveis.ListaPessoa))
+                {
+                    MessageBox.Show("Lista ordenada com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao ordenar lista.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao ordenar lista: " + ex.Message);
+            }
+
+        }
+        // ao clicar nesse botão a lista será apagada do banco de dados
         private void btnDeletarLista_Click(object sender, EventArgs e)
         {
             try
@@ -92,9 +164,14 @@ namespace CrudAED
                 MysqlConexaoBanco.Open();
 
                 string query = $"select * from pessoas";
+               
 
                 if (query!=null)
                 {
+                    Variaveis.ListaPessoa.ApagaLista();
+                    string truncateQuery = "TRUNCATE TABLE pessoas";
+                    MySqlCommand truncateCommand = new MySqlCommand(truncateQuery, MysqlConexaoBanco);
+                    truncateCommand.ExecuteNonQuery();
                     CadastroPessoa cadastroPessoa = new CadastroPessoa();
 
                     if (cadastroPessoa.deletarLista(Variaveis.ListaPessoa))

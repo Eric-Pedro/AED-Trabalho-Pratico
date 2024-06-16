@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrudAED")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61bb9cdf2a72df1b7a6f815ddcdd79320b4c5557")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2280ab13d6dda5d7ce985dd0d825ec15544c93b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrudAED")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudAED")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
